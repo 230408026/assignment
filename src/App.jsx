@@ -1,12 +1,12 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
-const App = () => {
-  return (
-    <div>
-      <h1>Shop App</h1>
-      <p>todo</p>
-    </div>
-  );
-};
+const Home = () => <h1>Home</h1>;
+
+const App = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+  </Routes>
+);
 
 export default App;
