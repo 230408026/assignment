@@ -1,11 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import ProductList from './pages/ProductList';
 import './App.css';
-
-const Home = () => <h1>Home</h1>;
 
 const App = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
+    <Route element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="products" element={<ProductList />} />
+    </Route>
   </Routes>
 );
 
