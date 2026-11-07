@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom';
 import NavBar from './NavBar';
 
-const Layout = () => {
+const Layout = ({ theme, onToggleTheme }) => {
   return (
-    <div className="wrapper">
-      <NavBar />
+    <div className={`wrapper ${theme}`}>
+      <NavBar theme={theme} onToggleTheme={onToggleTheme} />
       <div className="content">
         <Outlet />
       </div>
