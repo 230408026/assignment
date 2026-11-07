@@ -1,0 +1,351 @@
+/* topbar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 14px;
+}
+
+.topbar-nav a {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.topbar-nav a:hover { background: rgba(0,0,0,0.04); }
+
+.topbar-nav a.active {
+  color: #059669;
+  background: #ecfdf5;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-count {
+  background: #dc2626;
+  color: #fff;
+  font-size: 11px;
+  padding: 0 5px;
+  border-radius: 8px;
+  margin-left: 3px;
+  vertical-align: super;
+}
+
+.toggle-theme {
+  padding: 4px 10px;
+  font-size: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.username-label {
+  font-size: 13px;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline {
+  padding: 4px 12px;
+  font-size: 14px;
+  border: 1px solid #059669;
+  color: #059669;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-outline:hover { background: #059669; color: #fff; }
+
+/* content area */
+.content {
+  flex: 1;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* footer */
+.site-footer {
+  text-align: center;
+  padding: 14px;
+  font-size: 13px;
+  color: #888;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+/* buttons */
+.btn-primary {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #059669;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-primary:hover { background: #047857; }
+
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-danger {
+  padding: 8px 18px;
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-danger:hover { background: #b91c1c; }
+
+/* messages */
+.message { text-align: center; padding: 30px; color: #777; }
+.message.err { color: #dc2626; }
+.form-error { color: #dc2626; font-size: 13px; }
+
+/* home */
+.home {
+  text-align: center;
+  padding: 50px 16px;
+}
+
+.home h1 { margin-bottom: 10px; }
+.home p { margin-bottom: 20px; color: #666; }
+
+/* product list */
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.filter-bar input, .filter-bar select {
+  padding: 7px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.filter-bar input { flex: 1; min-width: 160px; }
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.15s;
+}
+
+.card:hover { transform: translateY(-2px); }
+
+.card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card-body { padding: 10px 12px; }
+
+.card-title { font-size: 14px; margin: 0 0 4px; }
+
+.card-cat {
+  font-size: 11px;
+  color: #999;
+  text-transform: capitalize;
+}
+
+.card-price {
+  font-weight: 600;
+  color: #059669;
+  margin-top: 4px;
+}
+
+/* product detail */
+.detail-page { max-width: 750px; }
+
+.go-back {
+  background: none;
+  border: none;
+  color: #059669;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+}
+
+.detail-layout {
+  display: flex;
+  gap: 20px;
+}
+
+.detail-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.detail-text { flex: 1; }
+.detail-text h2 { margin-bottom: 6px; }
+
+.tag {
+  display: inline-block;
+  background: #ecfdf5;
+  color: #065f46;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.detail-text p { margin: 10px 0; color: #555; }
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #059669;
+  margin-bottom: 14px;
+}
+
+/* login */
+.login-container {
+  max-width: 360px;
+  margin: 36px auto;
+}
+
+.login-container h2 { margin-bottom: 18px; }
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.form-group label { font-size: 13px; font-weight: 500; }
+
+.form-group input {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* cart */
+.cart-empty { text-align: center; padding: 40px 0; }
+.cart-empty p { margin: 10px 0 18px; color: #777; }
+
+.cart-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item-price { margin-left: 8px; color: #666; font-size: 14px; }
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qty-controls button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.qty-value { min-width: 20px; text-align: center; }
+
+.btn-remove {
+  color: #dc2626;
+  border-color: #dc2626 !important;
+  background: transparent !important;
+  font-size: 13px;
+  padding: 2px 8px;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.total { font-size: 18px; font-weight: 700; }
+
+/* 404 */
+.not-found-page {
+  text-align: center;
+  padding: 50px 16px;
+}
+
+.not-found-page h2 { font-size: 48px; color: #d1d5db; margin-bottom: 8px; }
+
+/* responsive */
+@media (max-width: 600px) {
+  .detail-layout { flex-direction: column; }
+  .detail-img { width: 100%; height: 200px; }
+  .cart-summary { flex-direction: column; gap: 10px; }
+}
